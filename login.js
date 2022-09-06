@@ -14,7 +14,12 @@ botonLogin.addEventListener("click",(e)=>{
   let passwordUser = document.getElementById("pass").value
 
   const puedeEntrar =(emailUser==="ana@gmail.com")&&(passwordUser==="1234")? true:false 
-   puedeEntrar ? window.location.href ="productos.html" : alert("Usuario Incorrecto ,vuelva a intentar.")
+   puedeEntrar ? window.location.href ="productos.html": swal({
+    title: "Campos incorrectos",
+    icon:"error"
+
+    
+  });
 
 })
 
