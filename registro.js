@@ -48,19 +48,7 @@ function ingresoCorrecto() {
     
 
   
-// function btnSwal() {
 
-//   if (datosUsuario !="") {
-//     swal({
-//       title: "Good job!",
-//       text: "You clicked the button!",
-//       icon: "success",
-//       button: "Aww yiss!",
-//     });
-//     botonRegistro("click")
-//   }
- 
-// }
   
 
 
