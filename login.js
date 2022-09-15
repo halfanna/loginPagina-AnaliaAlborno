@@ -8,20 +8,41 @@ const botonLogin = document.getElementById('button')
 
 
 
+class Users {
+  constructor(usuario,password){
+  this.usuario = usuario;
+  this.password= password;
+}
+}
+
+let usuarios = []
+let user1 = new Users("ana@gmail.com","1234")
+let user2 = new Users ("vale@gmail.com","5678")
+let user3 =new Users ("nadin@gmail.com","0000")
+usuarios.push(user1,user2,user3)
+
+
 botonLogin.addEventListener("click",(e)=>{
   e.preventDefault();
-  let emailUser = document.getElementById("userEmail").value
-  let passwordUser = document.getElementById("pass").value
-// usuario de prueba  
-  const puedeEntrar =(emailUser==="ana@gmail.com")&&(passwordUser==="1234")? true:false 
-   puedeEntrar ? window.location.href ="productos.html"
-   : swal({
-    title: "Campos incorrectos",
-    icon:"error"
+  let emailUser = document.getElementById("userEmail").value;
+  let passwordUser = document.getElementById("pass").value;
 
+for (let usuario of usuarios){
     
-  });
-
+  const puedoEntrar = (usuario.usuario === emailUser ) && (usuario.password === passwordUser)? true:false
+  puedoEntrar ? window.location.href="productos.html"
+  
+   : swal({
+    title: " Usuario Incorrecto . Registrese",
+    icon:"error"
+   });
+}
 })
+
+
+
+
+  
+
 
 
