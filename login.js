@@ -33,7 +33,7 @@ for (let usuario of usuarios){
   puedoEntrar ? window.location.href="productos.html"
   
    : swal({
-    title: " Usuario Incorrecto . Registrese",
+    title: " Usuario Incorrecto. Por favor registrese. ",
     icon:"error"
    });
 }

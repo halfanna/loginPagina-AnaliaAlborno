@@ -13,58 +13,58 @@ class Datos{
  }
     
 }
-
+// array  vacio de datos 
 let datosUsuarioNuevo = []
 
 
 
 
+/// evento que toma los datos del input y luego los guarda en el local storage
 
-
-botonRegistro.addEventListener("submit",(e)=>{
+botonRegistro.addEventListener("click",(e)=>{
     e.preventDefault();
 
     let nombreUsuario =document.getElementById('nombre').value
     let emailUsuario = document.getElementById('email').value
     let userPassword = document.getElementById('pass').value
 
-    for (let usuarioNuevo of datosUsuarioNuevo){
+    let datosUser = new Datos(nombreUsuario,emailUsuario,userPassword);
     
-     if((usuarioNuevo.nombre === nombreUsuario)&&(usuarioNuevo.email ===emailUsuario)&&(usuarioNuevo.password ===userPassword)){
-      window.location.href ="productos.html"
-
-     }else
-      swal({
-      title: "Campos incorrectos.",
-      icon:"error"
-     });
-    }
-   
-    })
-    
-  
-     
-
-
-// ingreso de datos en el formulario  
-// function ingresoCorrecto() {
-//   Toastify({
-//     text: "Bienvenido! Sos un nuevo usuario",
-//     duration: 5000,
-//     newWindow: true,
-//     close: true,
-//     gravity: "top", 
-//     position: "center", 
-//     stopOnFocus: true, 
-//     style: {
-//       background: " #181818",
+    datosUsuarioNuevo.push(datosUser)
+        
+        localStorage.setItem("infoInput", JSON.stringify(datosUsuarioNuevo));
       
-//     },
-//    botonRegistro: function(){} 
-//   }).showToast();
+
+        ingresoCorrecto();
+      
+        setTimeout(()=>{
+         window.open('productos.html')
+        },1000)
+        
+      }
+)
 
 
-// }
+
+
+ 
+function ingresoCorrecto() {
+  Toastify({
+    text: "Bienvenido! Sos un nuevo usuario",
+    duration: 5000,
+    newWindow: true,
+    close: true,
+    gravity: "top", 
+    position: "center", 
+    stopOnFocus: true, 
+    style: {
+      background: " #181818",
+      
+    },
+    
+   botonRegistro: function(){} 
+  }).showToast();
+  }
  
     
 
