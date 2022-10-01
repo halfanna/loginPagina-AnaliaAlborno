@@ -1,12 +1,12 @@
 
 
 // el login para que ingrese 
-
+// traigo los elementos del html
 let user = document.getElementById('userEmail')
 let contraseña =document.getElementById('pass')
 const botonLogin = document.getElementById('button')
 
-
+//creo un constructor de usuario y contraseña
 
 class Users {
   constructor(usuario,password){
@@ -15,6 +15,8 @@ class Users {
 }
 }
 
+// creo nuevos usuarios
+
 let usuarios = []
 let user1 = new Users("ana@gmail.com","1234")
 let user2 = new Users ("vale@gmail.com","5678")
@@ -22,6 +24,7 @@ let user3 =new Users ("nadin@gmail.com","0000")
 let user4 =new Users("dary@gmail.com","4444")
 usuarios.push(user1,user2,user3,user4)
 
+// creo evento para el ingreso 
 
 botonLogin.addEventListener("click",(e)=>{
   e.preventDefault();
