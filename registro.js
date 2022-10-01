@@ -46,7 +46,7 @@ botonRegistro.addEventListener("click",(e)=>{
 
 
 
-
+// USO TOASTIFY PARA EL INGRESO DE UN NUEVO USUARIO
  
 function ingresoCorrecto() {
   Toastify({

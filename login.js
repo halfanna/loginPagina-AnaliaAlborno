@@ -19,7 +19,8 @@ let usuarios = []
 let user1 = new Users("ana@gmail.com","1234")
 let user2 = new Users ("vale@gmail.com","5678")
 let user3 =new Users ("nadin@gmail.com","0000")
-usuarios.push(user1,user2,user3)
+let user4 =new Users("dary@gmail.com","4444")
+usuarios.push(user1,user2,user3,user4)
 
 
 botonLogin.addEventListener("click",(e)=>{
@@ -43,6 +44,3 @@ for (let usuario of usuarios){
 
 
   
-
-
-
