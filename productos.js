@@ -133,24 +133,24 @@ const mostrarProductos = () => {
  // API FAKE STORE AGREGO LOS PRODUCTOS
 
 
- const footerPublicidad =document.getElementById('#redes')
+//  const footerPublicidad =document.getElementById('#redes')
 
- fetch('https://fakestoreapi.com/products/?limit=5')
- .then((res)=>res.json())
- .then((data)=> data.forEach((info) => {
-    const productos =document.getElementById('frases')
-    productos.classList.add('productosPublicidad')
-    productos.innerHTML = `
+//  fetch('https://fakestoreapi.com/products/?limit=5')
+//  .then((res)=>res.json())
+//  .then((data)=> data.forEach((info) => {
+//     const productos =document.getElementById('frases')
+//     productos.classList.add('productosPublicidad')
+//     productos.innerHTML = `
    
-        <p>  ${info.title}</p>
-        <h3> FakeApiPublicidad </h3>
-        <h4>  ${info.price}</h4>
-        <h4>  ${info.description}</h4>
+//         <p>  ${info.title}</p>
+//         <h3> FakeApiPublicidad </h3>
+//         <h4>  ${info.price}</h4>
+//         <h4>  ${info.description}</h4>
         
         
-         `
+//          `
 
-         footerPublicidad.appendChild(productos)
-         console.log(data)
+//          footerPublicidad.appendChild(productos)
+//          console.log(data)
 
- }))
+//  }))
