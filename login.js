@@ -35,7 +35,8 @@ botonLogin.addEventListener("click",(e)=>{
 for (let usuario of usuarios){
     
   const puedoEntrar = (usuario.usuario === emailUser ) && (usuario.password === passwordUser)? true:false
-  puedoEntrar ? window.location.href="productos.html"
+  puedoEntrar ? window.location.href="productos.html" 
+  
   
    : swal({
     title: " Usuario Incorrecto. Por favor registrese. ",

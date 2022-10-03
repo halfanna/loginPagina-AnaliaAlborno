@@ -38,6 +38,7 @@ botonRegistro.addEventListener("click",(e)=>{
         ingresoCorrecto();
       
         setTimeout(()=>{
+       
          window.open('productos.html')
         },1000)
         
