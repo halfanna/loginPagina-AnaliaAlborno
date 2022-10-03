@@ -10,6 +10,13 @@
   font-size: 62.5%;
 }
 
+.principal-cartel .titulo-cartel {
+  font-size: 2rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+
 .header .titulo-marca {
   color: #0b0606;
   font-size: 4rem;
