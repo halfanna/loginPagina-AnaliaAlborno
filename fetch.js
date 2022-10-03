@@ -14,11 +14,14 @@
     const publicidad =document.getElementById('frases')
     publicidad.classList.add('productosPublicidad')
     publicidad.innerHTML = `
-        <h3> FakeApiPublicidad </h3>
+        <h3> Fake Api Publicidad </h3>
         <p>  ${info.title}</p>
         <h4>  ${info.price}</h4>
         <h4>  ${info.description}</h4>
-      
+        <img ${info.img} >
+        
+        
+
         
          `
 

@@ -1,6 +1,7 @@
 
+// LOGIN
 
-// el login para que ingrese 
+
 // traigo los elementos del html
 let user = document.getElementById('userEmail')
 let contraseña =document.getElementById('pass')

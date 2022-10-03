@@ -23,7 +23,7 @@ articulosStock.push(new Articulos("3","dallas","bandolera","negro croco",4500 ,'
 articulosStock.push(new Articulos("4","grecia","bolso","verde ingles",7590 ,'./imagenes/bolso1.webp'  ))
 articulosStock.push(new Articulos("5","holly","bandolera","rojo croco",6790 , './imagenes/bolso1.webp' ))
 articulosStock.push(new Articulos("6","kenya","bandolera","azul",5590 , './imagenes/newpic.jpg' ))
-articulosStock.push(new Articulos("7","paris","cinto","azul fracia",1590 , './imagenes/newpic.jpg'))
+articulosStock.push(new Articulos("7","paris","cinto","azul francia",1590 , './imagenes/newpic.jpg'))
 articulosStock.push(new Articulos("8","marilyn","cinto","verde benetton",2590 , './imagenes/newpic.jpg' ))
 
 
@@ -93,6 +93,8 @@ articulosStock.forEach((item) =>{
    
 
 })
+
+// MODAL PARA MOSTRAR LA DESCRIPCION DEL PRODUCTO ELEGIDO
 
 const mostrarProductos = () => {
    
