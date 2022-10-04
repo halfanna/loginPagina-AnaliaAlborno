@@ -31,9 +31,10 @@ botonRegistro.addEventListener("click",(e)=>{
     let datosUser = new Datos(nombreUsuario,emailUsuario,userPassword);
     
     datosUsuarioNuevo.push(datosUser)
-        if((nombreUsuario != " ")&& (emailUsuario !="")&& (userPassword != " ")){
+        if((nombreUsuario != "") && ( emailUsuario !="") && (userPassword !="") ){
           ingresoCorrecto();
         }
+
         else {
           noPodesIngresar();
         }
